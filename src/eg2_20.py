@@ -17,3 +17,13 @@ with open("floats.bin", "rb") as fp:
 print(floats2[-1])
 
 print(floats2 == floats)
+
+numbers = array("h", [-2, -1, 0, 1, 2])
+memv = memoryview(numbers)
+
+print(len(memv), memv[0])
+
+memv_oct = memv.cast("B")
+print(memv_oct.tolist())
+memv_oct[5] = 4
+print(numbers)
