@@ -5,11 +5,6 @@ verify_ssl = true
 
 [dev-packages]
 flake8 = "*"
-black = "*"
-isort = "*"
-
-[packages]
-numpy = "*"
 
 [requires]
 python_version = "3.6"
